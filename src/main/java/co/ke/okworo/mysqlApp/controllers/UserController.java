@@ -29,7 +29,7 @@ public class UserController {
                         userService.createUser(userModel))
         );
     }
-
+//
     @GetMapping("/all")
     ResponseEntity<?> getAllUser(){
         return ResponseEntity.ok(new ApiResponse(true,"SUCCESS",userService.findAll()));
