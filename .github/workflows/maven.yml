@@ -27,7 +27,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: morrisokwor/springboot-test
-        tags: v0.0.1
+        tags: $(date +%Y-%m-%d--%H-%M-%S--%N)
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
